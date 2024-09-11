@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refrigeración Industrial XYZ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #0044cc;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #003399;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .services, .contact, .quote, .gallery {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .services h2, .contact h2, .quote h2, .gallery h2 {
+            color: #0044cc;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .quote form {
+            display: flex;
+            flex-direction: column;
+        }
+        .quote form input, .quote form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .quote form button {
+            background-color: #0044cc;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #003399;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Refrigeración Industrial Macias</h1>
+    </header>
+    <nav>
+        <a href="#services">Servicios</a>
+        <a href="#gallery">Galería</a>
+        <a href="#contact">Contacto</a>
+        <a href="#quote">Cotización</a>
+    </nav>
+    <div class="container">
+        <section id="services" class="services">
+            <h2>Servicios</h2>
+            <p>En Refrigeración Industrial Macias ofrecemos una gama completa de servicios especializados para satisfacer todas sus necesidades de refrigeración industrial. Nuestros servicios incluyen:</p>
+            <ul>
+                <li>Instalación de sistemas de refrigeración industrial</li>
+                <li>Mantenimiento y reparación de equipos</li>
+                <li>Consultoría técnica</li>
+                <li>Optimización energética</li>
+            </ul>
+        </section>
+        <section id="gallery" class="gallery">
+            <h2>Galería</h2>
+            <p><strong></strong> Camaras De Refrigeracion Macias</p>
+            <img src="refrigeracion_en_accion1.jpg" alt="Refrigeración en acción">
+            <img src="refrigeracion_en_accion2.jpg" alt="Refrigeración en acción">
+            <p><strong></strong> Equipos Que Se An Instalado</p>
+            <img src="equipo_refrigeracion1.jpg" alt="Equipo de refrigeración">
+            <img src="equipo_refrigeracion2.jpg" alt="Equipo de refrigeración">
+            <p><strong></strong> Instalacion De Sistemas</p>
+            <img src="Instalacion_de_sistemas1.jpg" alt="Instalación de sistemas">
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contacto</h2>
+            <p>Puede contactarnos a través de los siguientes métodos:</p>
+            <p><strong>Teléfono:</strong> +52 449 100 3401</p>
+            <p><strong>Email:</strong> mantenimento@gmail.com</p>
+            <p><strong>Dirección:</strong> Calle Venustiano Carranza #211, Aguascalientes, Mexico</p>
+        </section>
+        <section id="quote" class="quote">
+            <h2>Solicitar Cotización</h2>
+            <form action="enviar_cotizacion.php" method="post">
+                <input type="text" name="name" placeholder="Nombre" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="tel" name="phone" placeholder="Teléfono" required>
+                <textarea name="message" placeholder="Detalles del proyecto" rows="5" required></textarea>
+                <button type="submit">Enviar Cotización</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Refrigeración Industrial Macias. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
